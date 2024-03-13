@@ -49,7 +49,7 @@ class attendance():
         driver = Testlogin().driver
         #driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
         time.sleep(5)
-        contextshadow = driver.find_element(By.CSS_SELECTOR, '[id="dbox-top-bar"]').shadow_root
+        contextshadow = driver.find_element(By.CSS_SELECTOR, '#dbox-top-bar').shadow_root
         time.sleep(2)
         shadow_text = contextshadow.find_element(By.CSS_SELECTOR,".mr-8.db_btn_clock.tooltip_clock")
         shadow_text.click()
@@ -60,7 +60,7 @@ class attendance():
         driver = Testlogin().driver
         #driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
         time.sleep(5)
-        contextshadow = driver.find_element(By.CSS_SELECTOR, '[id="dbox-top-bar"]').shadow_root
+        contextshadow = driver.find_element(By.CSS_SELECTOR, '#dbox-top-bar').shadow_root
         time.sleep(2)
         shadow_text = contextshadow.find_element(By.CSS_SELECTOR, ".mr-8.db_btn_clock.tooltip_clock")
         shadow_text.click()
