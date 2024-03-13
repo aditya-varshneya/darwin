@@ -47,7 +47,7 @@ class Testlogin():
 class attendance():
     def clock_in(self):
         driver = Testlogin().driver
-        driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
+        #driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
         time.sleep(5)
         contextshadow = driver.find_element(By.CSS_SELECTOR, '[id="dbox-top-bar"]').shadow_root
         time.sleep(2)
@@ -58,7 +58,7 @@ class attendance():
 
     def clock_out(self):
         driver = Testlogin().driver
-        driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
+        #driver.find_element(By.XPATH, "/html/body/div[2]/div/nav/div[1]/div/div[8]/div").click()
         time.sleep(5)
         contextshadow = driver.find_element(By.CSS_SELECTOR, '[id="dbox-top-bar"]').shadow_root
         time.sleep(2)
